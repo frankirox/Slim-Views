@@ -1,9 +1,9 @@
 {
-    "name": "slim/views",
+    "name": "moltin/slim-views",
     "type": "library",
     "description": "Smarty and Twig View Parser package for the Slim Framework",
     "keywords": ["templating", "extensions", "slimphp"],
-    "homepage": "http://github.com/codeguy/Slim-Views",
+    "homepage": "http://github.com/moltin/Slim-Views",
     "license": "MIT",
     "authors": [
         {
