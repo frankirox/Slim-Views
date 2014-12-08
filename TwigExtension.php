@@ -55,9 +55,9 @@ class TwigExtension extends \Twig_Extension
         return Slim::getInstance($appName)->urlFor($name, $params);
     }
 
-    public function site($url, $withUri = true, $appName = 'default')
+    public function site($url, $withUri = true, $filters = array(), $appName = 'default')
     {
-        return $this->base($withUri, $appName) . '/' . ltrim($url, '/');
+        return $this->base($withUri, $appName) . '/' . ltrim($url, '/').( ! empty($filters) ? '?'.http_build_query($filters) : '' );
     }
 
     public function base($withUri = true, $appName = 'default')
